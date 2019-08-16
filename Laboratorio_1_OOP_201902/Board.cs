@@ -106,29 +106,25 @@ namespace Laboratorio_1_OOP_201902
 
 
         //Metodos
-        public void AddCombatCard(int PlayerId)
-        {
-            throw new NotImplementedException();
-        }
         public void AddMeleeCard(int PlayerId, CombatCard combatCard)
         {
-            throw new NotImplementedException();
+            meleeCards[PlayerId].Add(combatCard);
         }
         public void AddRangeCard(int PlayerId, CombatCard combatCard)
         {
-            throw new NotImplementedException();
+            rangeCards[PlayerId].Add(combatCard);
         }
         public void AddLongRangeCard(int PlayerId, CombatCard combatCard)
         {
-            throw new NotImplementedException();
+            longRangeCards[PlayerId].Add(combatCard);
         }
         public void AddCaptainCard(int PlayerId, SpecialCard specialCard)
         {
-            throw new NotImplementedException();
+            captainCards[PlayerId].Add(specialCard);
         }
         public void AddWeatherCard(int PlayerId, SpecialCard specialCard)
         {
-            throw new NotImplementedException();
+            weatherCards[PlayerId].Add(specialCard);
         }
         public void DestroyMeleeCard(int PlayerId)
         {
