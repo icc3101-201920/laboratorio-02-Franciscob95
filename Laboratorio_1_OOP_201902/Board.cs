@@ -120,23 +120,23 @@ namespace Laboratorio_1_OOP_201902
         }
         public void AddCaptainCard(int PlayerId, SpecialCard specialCard)
         {
-            captainCards[PlayerId].Add(specialCard);
+            //captainCards= specialCard("name", "type", "effect", default, true);
         }
         public void AddWeatherCard(int PlayerId, SpecialCard specialCard)
         {
-            weatherCards[PlayerId].Add(specialCard);
+            throw new NotImplementedException();
         }
         public void DestroyMeleeCard(int PlayerId)
         {
-            throw new NotImplementedException();
+            meleeCards[PlayerId].Clear();
         }
         public void DestroyRangeCard(int PlayerId)
         {
-            throw new NotImplementedException();
+            rangeCards[PlayerId].Clear();
         }
         public void DestroyLongRangeCard(int PlayerId)
         {
-            throw new NotImplementedException();
+            longRangeCards[PlayerId].Clear();
         }
         public void DestroySpecialMeleeCard(int PlayerId)
         {
@@ -154,10 +154,17 @@ namespace Laboratorio_1_OOP_201902
         {
             throw new NotImplementedException();
         }
-        public int[] GetMeleeAttackPoints()
-        {
-            throw new NotImplementedException();
-        }
+        //public int[] GetMeleeAttackPoints()
+        //{
+          //  get
+            //{
+                //return this.meleeCards.attackPoints;
+            //}
+            //set
+            //{
+                //this.meleeCards.attackPoints = value;
+            //}
+        //}
         public int[] GetRangeAttackPoints()
         {
             throw new NotImplementedException();

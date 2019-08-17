@@ -8,14 +8,16 @@ namespace Laboratorio_1_OOP_201902.Card
     {
         //Atributos
         private string buffType;
+        private bool captain;
 
         //Constructor
-        public SpecialCard(string name, string type, string effect):base(name, type, effect)
+        public SpecialCard(string name, string type, string effect, bool captain):base(name, type, effect)
         {
             Name = name;
             Type = type;
             Effect = effect;
             BuffType = null;
+            this.captain = captain;
         }
 
         //Propiedades

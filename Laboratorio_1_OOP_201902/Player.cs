@@ -23,6 +23,17 @@ namespace Laboratorio_1_OOP_201902
         private Board board;
         private SpecialCard captain;
 
+        public Player(int id, int lifePoints, int attackPoints, Deck deck, Hand hand, Board board, SpecialCard captain)
+        {
+            this.id = id;
+            this.lifePoints = lifePoints;
+            this.attackPoints = attackPoints;
+            this.deck = deck;
+            this.hand = hand;
+            this.board = board;
+            this.captain = captain;
+        }
+
         //Constructor
         public Player()
         {   
@@ -121,9 +132,9 @@ namespace Laboratorio_1_OOP_201902
         }
         public void ChooseCaptainCard(SpecialCard captainCard)
         {
-            foreach (string i in players)
+            if (captain == null)
             {
-
+                //captain = SpecialCard("name", "type", "effect", "bufftype", true);
             }
         }
     }

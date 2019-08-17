@@ -63,11 +63,31 @@ namespace Laboratorio_1_OOP_201902
         //Metodos
         public bool CheckIfEndGame()
         {
-            throw new NotImplementedException();
+            if (EndGame == true)
+            {
+                Console.WriteLine("El juego ha terminado");
+                return true;
+            } 
+            else 
+            {
+                return false;
+            }
         }
         public bool GetWinner()
         {
-            throw new NotImplementedException();
+            for (var i =0; i <= players.Length;i++)
+            {
+                if (players[i].LifePoints == 0)
+                {
+                    return false;
+                }
+                else
+                {
+                    Console.WriteLine(players[i]);
+                    return true;
+                }
+            }
+            return false;
         }
         public void Play()
         {
